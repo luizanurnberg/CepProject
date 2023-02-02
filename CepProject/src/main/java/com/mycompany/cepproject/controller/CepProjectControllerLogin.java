@@ -53,7 +53,8 @@ public class CepProjectControllerLogin {
             }
         });
     }
-
+    
+    //Ativa o botão de Cadastre-se, trazendo automaticamente a tela de Cadastro
     public void activateSignUpButtonOnLogin() {
         cepProjectViewLogin.setSignUpButtonOnLogin(new ActionListener() {
             @Override
