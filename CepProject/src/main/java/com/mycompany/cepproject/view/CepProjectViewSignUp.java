@@ -4,6 +4,8 @@
  */
 package com.mycompany.cepproject.view;
 
+import java.awt.event.ActionListener;
+
 /**
  *
  * @author luizanurnberg
@@ -15,6 +17,22 @@ public class CepProjectViewSignUp extends javax.swing.JFrame {
      */
     public CepProjectViewSignUp() {
         initComponents();
+    }
+
+    public String getSignUpName() {
+        return jtNameSignUpField.getText();
+    }
+
+    public String getSignUpEmail() {
+        return jtEmailSignUpField.getText();
+    }
+
+    public String getSignUpPassword() {
+        return jtPasswordSignUpField.getText();
+    }
+    
+    public void setSignUpButton(ActionListener actionSignUp){
+        jbSignUp.addActionListener(actionSignUp);
     }
 
     /**
