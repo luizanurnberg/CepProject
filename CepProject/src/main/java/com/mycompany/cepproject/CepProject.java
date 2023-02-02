@@ -5,7 +5,9 @@
 package com.mycompany.cepproject;
 
 import com.mycompany.cepproject.controller.CepProjectController;
+import com.mycompany.cepproject.controller.CepProjectControllerLogin;
 import com.mycompany.cepproject.view.CepProjectView;
+import com.mycompany.cepproject.view.CepProjectViewLogin;
 
 /**
  *
@@ -14,8 +16,9 @@ import com.mycompany.cepproject.view.CepProjectView;
 public class CepProject {
 
     public static void main(String[] args) {
-        CepProjectController cp = new CepProjectController(new CepProjectView());
-        cp.setView();
+        CepProjectController cpCep = new CepProjectController(new CepProjectView());
+        CepProjectControllerLogin cpLogin = new CepProjectControllerLogin(new CepProjectViewLogin(), cpCep);
+        cpLogin.setLoginView();
         
     }
 }

@@ -36,7 +36,7 @@ public class CepProjectController {
     }
 
     //Ao setar esse método no main, será possível ver a tela
-    public void setView() {
+    public void setCepView() {
         cepProjectView.setVisible(true);
     }
 
@@ -86,7 +86,7 @@ public class CepProjectController {
 
     //Valida se o usuário inseriu o campo CEP em branco
     public void validateField() throws CepProjectEmptyFieldException {
-        if (cepProjectView.getCep().isBlank() || cepProjectView.getCep().isEmpty()) {
+        if (cepProjectView.getCep().isBlank()) {
             throw new CepProjectEmptyFieldException();
         }
     }

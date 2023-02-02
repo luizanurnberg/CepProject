@@ -11,7 +11,7 @@ package com.mycompany.cepproject.exception;
 public class CepProjectEmptyFieldException extends Exception {
 
     public CepProjectEmptyFieldException() {
-        super("O campo do CEP está vazio, para ter acesso ao serviço é necessário que ele seja preenchido");
+        super("O campo está vazio, para ter acesso ao serviço é necessário que ele seja preenchido");
     }
     
 }
