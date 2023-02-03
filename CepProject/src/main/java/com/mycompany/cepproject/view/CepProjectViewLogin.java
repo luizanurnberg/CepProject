@@ -26,7 +26,7 @@ public class CepProjectViewLogin extends javax.swing.JFrame {
     }
     
     public String getLoginPassword() {
-        return jtPasswordLoginField.getText();
+        return jPasswordLoginField.getText();
     }
     
     public void setLoginButton(ActionListener actionLogin) {
@@ -37,10 +37,6 @@ public class CepProjectViewLogin extends javax.swing.JFrame {
         jbSignUp.addActionListener(actionSignUp);
     }
     
-    public void setShowPasswordCheckBox(MouseAdapter arg0){
-        jcbShowPassword = new JCheckBox("Exibir Senha");
-        jcbShowPassword.addMouseListener(arg0);
-    }
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -53,25 +49,18 @@ public class CepProjectViewLogin extends javax.swing.JFrame {
 
         jpLogin = new javax.swing.JPanel();
         jtEmailLoginField = new javax.swing.JTextField();
-        jtPasswordLoginField = new javax.swing.JTextField();
         jlEmailLoginText = new javax.swing.JLabel();
         jbLogin = new javax.swing.JButton();
         jlPasswordLoginText = new javax.swing.JLabel();
         jbSignUp = new javax.swing.JButton();
         jlLoginWarning = new javax.swing.JLabel();
-        jcbShowPassword = new javax.swing.JCheckBox();
+        jPasswordLoginField = new javax.swing.JPasswordField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jtEmailLoginField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jtEmailLoginFieldActionPerformed(evt);
-            }
-        });
-
-        jtPasswordLoginField.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jtPasswordLoginFieldActionPerformed(evt);
             }
         });
 
@@ -87,38 +76,31 @@ public class CepProjectViewLogin extends javax.swing.JFrame {
 
         jlLoginWarning.setText("LOGIN");
 
-        jcbShowPassword.setText("Exibir Senha");
-
         javax.swing.GroupLayout jpLoginLayout = new javax.swing.GroupLayout(jpLogin);
         jpLogin.setLayout(jpLoginLayout);
         jpLoginLayout.setHorizontalGroup(
             jpLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jpLoginLayout.createSequentialGroup()
-                .addGroup(jpLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jpLoginLayout.createSequentialGroup()
-                        .addGap(69, 69, 69)
-                        .addGroup(jpLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jlEmailLoginText)
-                            .addComponent(jlPasswordLoginText)
-                            .addGroup(jpLoginLayout.createSequentialGroup()
-                                .addGroup(jpLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                    .addComponent(jtEmailLoginField, javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jtPasswordLoginField, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 198, Short.MAX_VALUE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jcbShowPassword))))
-                    .addGroup(jpLoginLayout.createSequentialGroup()
-                        .addGap(149, 149, 149)
-                        .addComponent(jbLogin)))
-                .addGap(0, 0, Short.MAX_VALUE))
-            .addGroup(jpLoginLayout.createSequentialGroup()
-                .addGroup(jpLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jpLoginLayout.createSequentialGroup()
-                        .addGap(124, 124, 124)
-                        .addComponent(jbSignUp, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jpLoginLayout.createSequentialGroup()
-                        .addGap(165, 165, 165)
-                        .addComponent(jlLoginWarning)))
-                .addContainerGap(136, Short.MAX_VALUE))
+                .addGroup(jpLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(jpLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(jpLoginLayout.createSequentialGroup()
+                            .addGap(149, 149, 149)
+                            .addComponent(jbLogin))
+                        .addGroup(jpLoginLayout.createSequentialGroup()
+                            .addGap(124, 124, 124)
+                            .addComponent(jbSignUp, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(jpLoginLayout.createSequentialGroup()
+                            .addGap(165, 165, 165)
+                            .addComponent(jlLoginWarning))
+                        .addGroup(jpLoginLayout.createSequentialGroup()
+                            .addGap(91, 91, 91)
+                            .addGroup(jpLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(jlEmailLoginText)
+                                .addComponent(jtEmailLoginField, javax.swing.GroupLayout.PREFERRED_SIZE, 198, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addGroup(jpLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(jlPasswordLoginText)
+                        .addComponent(jPasswordLoginField, javax.swing.GroupLayout.PREFERRED_SIZE, 198, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(92, Short.MAX_VALUE))
         );
         jpLoginLayout.setVerticalGroup(
             jpLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -131,13 +113,11 @@ public class CepProjectViewLogin extends javax.swing.JFrame {
                 .addComponent(jtEmailLoginField, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jlPasswordLoginText)
-                .addGap(4, 4, 4)
-                .addGroup(jpLoginLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jtPasswordLoginField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jcbShowPassword))
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jPasswordLoginField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 30, Short.MAX_VALUE)
                 .addComponent(jbLogin)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 32, Short.MAX_VALUE)
+                .addGap(18, 18, 18)
                 .addComponent(jbSignUp)
                 .addGap(19, 19, 19))
         );
@@ -159,10 +139,6 @@ public class CepProjectViewLogin extends javax.swing.JFrame {
     private void jtEmailLoginFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jtEmailLoginFieldActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jtEmailLoginFieldActionPerformed
-
-    private void jtPasswordLoginFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jtPasswordLoginFieldActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jtPasswordLoginFieldActionPerformed
 
     /**
      * @param args the command line arguments
@@ -200,14 +176,13 @@ public class CepProjectViewLogin extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JPasswordField jPasswordLoginField;
     private javax.swing.JButton jbLogin;
     private javax.swing.JButton jbSignUp;
-    private javax.swing.JCheckBox jcbShowPassword;
     private javax.swing.JLabel jlEmailLoginText;
     private javax.swing.JLabel jlLoginWarning;
     private javax.swing.JLabel jlPasswordLoginText;
     private javax.swing.JPanel jpLogin;
     private javax.swing.JTextField jtEmailLoginField;
-    private javax.swing.JTextField jtPasswordLoginField;
     // End of variables declaration//GEN-END:variables
 }

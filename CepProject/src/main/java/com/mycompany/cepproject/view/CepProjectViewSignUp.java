@@ -89,10 +89,10 @@ public class CepProjectViewSignUp extends javax.swing.JFrame {
                             .addComponent(jlEmailSignUpText)
                             .addComponent(jlPasswordSignUpText)))
                     .addGroup(jpSignUpLayout.createSequentialGroup()
-                        .addGap(144, 144, 144)
+                        .addGap(138, 138, 138)
                         .addComponent(jlSignUpWarning))
                     .addGroup(jpSignUpLayout.createSequentialGroup()
-                        .addGap(130, 130, 130)
+                        .addGap(132, 132, 132)
                         .addComponent(jbSignUp)))
                 .addContainerGap(93, Short.MAX_VALUE))
         );
@@ -113,9 +113,9 @@ public class CepProjectViewSignUp extends javax.swing.JFrame {
                 .addComponent(jlPasswordSignUpText)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jtPasswordSignUpField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(27, 27, 27)
+                .addGap(26, 26, 26)
                 .addComponent(jbSignUp)
-                .addContainerGap(35, Short.MAX_VALUE))
+                .addContainerGap(36, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());

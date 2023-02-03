@@ -9,6 +9,7 @@ import com.mycompany.cepproject.view.CepProjectViewLogin;
 import com.mycompany.cepproject.view.CepProjectViewSignUp;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.MouseAdapter;
 import javax.swing.JOptionPane;
 
 /**
@@ -53,7 +54,7 @@ public class CepProjectControllerLogin {
             }
         });
     }
-    
+
     //Ativa o botão de Cadastre-se, trazendo automaticamente a tela de Cadastro
     public void activateSignUpButtonOnLogin() {
         cepProjectViewLogin.setSignUpButtonOnLogin(new ActionListener() {
