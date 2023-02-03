@@ -22,6 +22,5 @@ public class CepProject {
         CepProjectControllerSignUp cpSignUp = new CepProjectControllerSignUp(cpCep, new CepProjectViewSignUp());
         CepProjectControllerLogin cpLogin = new CepProjectControllerLogin(new CepProjectViewLogin(), cpCep, cpSignUp);
         cpLogin.setLoginView();
-        
     }
 }

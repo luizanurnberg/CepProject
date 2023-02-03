@@ -25,7 +25,7 @@ public class CepProjectControllerSignUp {
         activateSignUpButton();
     }
 
-    //Ao setar esse método no main, será possível ver a tela
+    //Ao setar esse método, será possível visualizar a tela de cadastro
     public void setSignUpView() {
         cepProjectViewSignUp.setVisible(true);
     }

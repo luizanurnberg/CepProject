@@ -30,7 +30,7 @@ public class CepProjectControllerLogin {
         activateSignUpButtonOnLogin();
     }
 
-    //Ao setar esse método no main, será possível ver a tela
+    //Ao setar esse método, será possível visualizar a tela de login
     public void setLoginView() {
         cepProjectViewLogin.setVisible(true);
     }

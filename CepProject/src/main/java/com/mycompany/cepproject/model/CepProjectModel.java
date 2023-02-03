@@ -4,8 +4,6 @@
  */
 package com.mycompany.cepproject.model;
 
-import java.util.ArrayList;
-
 /**
  *
  * @author luizanurnberg
@@ -37,7 +35,7 @@ public class CepProjectModel {
         } else {
             printToString = "Cidade: " + this.localidade + "\n" + "Bairro: " + this.bairro + "\n" + "Rua: " + this.logradouro;
         }
-        return printToString ;
+        return printToString;
     }
 
 }

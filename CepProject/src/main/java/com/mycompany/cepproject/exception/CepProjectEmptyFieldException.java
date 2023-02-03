@@ -13,5 +13,5 @@ public class CepProjectEmptyFieldException extends Exception {
     public CepProjectEmptyFieldException() {
         super("O campo está vazio, para ter acesso ao serviço é necessário que ele seja preenchido");
     }
-    
+
 }
