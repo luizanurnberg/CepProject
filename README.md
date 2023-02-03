@@ -54,6 +54,11 @@ Para que possam ser realizados os testes dos requisitos definidos para esse proj
 2. Executar clean and build no projeto para evitar erros<br>
 3. Ao rodar o projeto, ele já estará pronto para ser testado<br>
 
+# Retornos possíveis na consulta
+1. Nem todos os CEPs possuem todas informações da consulta (cidade, logradouro e bairro). Dessa forma, o sistema apenas trará aquelas que forem respectivamente encontradas<br>
+2. Ao inserir um CEP inválido, ou seja, que no retorno da requisição voltou sem nenhuma informação, será solicitado ao usuário que insira um valor válido<br>
+3. Caso aconteça algum problema na requisição, sistema não gastará processamento tentando validar a informação inserida, podendo acontecer principalmente por um dado mal colocado<br>
+
 # Implementações futuras
 1. Cache para armazenar as informações em um determinado período de tempo, criado por meio de um HashMap<br>
 2. Vincular um Hibernate ao projeto para melhores validações de login<br>
