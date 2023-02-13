@@ -61,4 +61,4 @@ Para que possam ser realizados os testes dos requisitos definidos para esse proj
 
 # Implementações futuras
 1. Cache para armazenar as informações em um determinado período de tempo, criado por meio de um HashMap<br>
-2. Vincular um Hibernate ao projeto para melhores validações de login<br>
+2. Vincular Hibernate ao projeto para melhores validações de login<br>
